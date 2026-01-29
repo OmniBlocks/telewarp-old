@@ -7,13 +7,12 @@
     "edit": ["https://turbowarp.org/editor?project_url={url}", "https://mirror.turbowarp.xyz/?project_url={url}"],
     "accent": "#ff4c4c"
   },
-
   {
     "id": "ob",
-    "name": "OmniBlocks Editor",
+    "name": "OmniBlocks Visual Editor",
     "url": "https://omniblocks.github.io",
     "accept": [".omb"],
-    "edit": "https://omniblocks.github.io",
+    "edit": "https://omniblocks.github.io/editor.html?project_url={url}",
     "accent": "#59c0c0"
   }
 ]

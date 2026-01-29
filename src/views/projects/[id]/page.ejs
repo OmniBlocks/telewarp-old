@@ -497,7 +497,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (editLink) {
     const projectId = "<%= project.id %>"; // EJS inject project ID
     const apiRoot = window.location.origin;
-    editLink.href = `/projects/<%= project.id %>/editor`
+    editLink.href = editLink.href.replaceAll("{url}", `${apiRoot}/api/sb3?id=${projectId}`);
   }
 });
 document.addEventListener("DOMContentLoaded", () => {

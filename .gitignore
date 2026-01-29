@@ -141,5 +141,4 @@ vite.config.ts.timestamp-*
 # TeleWarp Storage
 tmp
 telewarp-projects
-telewarp-avatars
 leveldb
