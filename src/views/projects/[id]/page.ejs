@@ -497,8 +497,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (editLink) {
     const projectId = "<%= project.id %>"; // EJS inject project ID
     const apiRoot = window.location.origin;
-    editLink.href = editLink.href.replace("%7Bid%7D", projectId);
-    editLink.href = editLink.href.replace("{id}", projectId);
+    editLink.href = `/projects/<%= project.id %>/editor`
   }
 });
 document.addEventListener("DOMContentLoaded", () => {
@@ -508,11 +507,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // Update all see-inside-dropdown links to replace {url} with actual SB3 URL
   document.querySelectorAll('.see-inside-dropdown-menu a').forEach(link => {
     if (link.href.includes("{url}")) {
-      link.href = link.href.replace("%7Bid%7D", projectId);
-      link.href = link.href.replace("{id}", projectId);
       link.href = link.href.replace("{url}", `${apiRoot}/api/sb3?id=${projectId}`);
     }
-      
   });
 
   // see-inside-dropdown toggle logic

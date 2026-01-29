@@ -13,7 +13,7 @@
     "name": "OmniBlocks Editor",
     "url": "https://omniblocks.github.io",
     "accept": [".omb"],
-    "edit": "{id}/editor",
+    "edit": "https://omniblocks.github.io",
     "accent": "#59c0c0"
   }
 ]
